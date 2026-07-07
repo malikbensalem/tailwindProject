@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="sticky top-0 border-b-2 bg-white">
+      <nav class="px-4" aria-label="Main navigation">
+        <div class="relative h-16 flex items-center">
+          <div class="flex-1 flex items-center">
+            <a href="index.html" class="text-xl font-semibold">TW PRJ</a>
+          </div>
+
+          <div class="absolute left-1/2 transform -translate-x-1/2">
+            <ul class="flex space-x-8">
+              <li>
+                <a href="index.html" class="text-gray-600 hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="projects.html" class="text-gray-600 hover:underline">Projects</a>
+              </li>
+              <li>
+                <a href="contact.html" class="font-bold hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1 flex justify-end">
+            <a
+              href="contact.html"
+              class="px-4 py-2 bg-black text-white hover:rounded hover:bg-gray-700"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+			<section class="py-6 border-b-4 border-b-gray-300">
+				<div class="p-6 border-l-10 border-l-black">
+
+				<p class="uppercase text-sm text-gray-500">Some text</p>
+          <h1 class="font-extrabold uppercase text-6xl md:text-7xl tracking-tight mt-6">
+            Send your <span class="underline italic font-extrabold text-gray-600">message.</span>
+          </h1>
+					<p class="text-gray-600 mt-6  pt-6">
+						some text to describe the explaining what to be contacted about. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          </p>
+				</div>
+      </section>
+      
+      <section class="grid lg:grid-cols-[2fr_1fr] gap-x-10 mt-10">
+        <div>
+          <div class="border border-gray-300 p-6 bg-white">
+            <form action="#" method="post" class="grid grid-cols-1 gap-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="text-xs uppercase text-gray-500">Full name</label>
+                  <input type="text" name="name" placeholder="John Doe" class="w-full mt-2 p-3 border border-gray-300 placeholder-gray-400 bg-transparent focus:outline-none" />
+                </div>
+
+                <div>
+                  <label class="text-xs uppercase text-gray-500">Email address</label>
+                  <input type="email" name="email" placeholder="client@domain.com" class="w-full mt-2 p-3 border border-gray-300 placeholder-gray-400 bg-transparent focus:outline-none" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs uppercase text-gray-500">Subject</label>
+                <input type="text" name="subject" placeholder="Project idea" class="w-full mt-2 p-3 border border-gray-300 placeholder-gray-400 bg-transparent focus:outline-none" />
+              </div>
+
+              <div>
+                <label class="text-xs uppercase text-gray-500">Message</label>
+                <textarea name="message" rows="6" placeholder="Describe the idea..." class="w-full mt-2 p-3 border border-gray-300 placeholder-gray-400 bg-transparent focus:outline-none"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="py-3 px-6 bg-black text-white uppercase font-bold">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="px-4">
+          <div class="mb-6">
+            <p class="uppercase text-xs text-gray-500">Address</p>
+            <h3 class="uppercase font-bold text-lg mt-2">Address Line</h3>
+            <p class="text-gray-600 text-sm mt-1">Address Line <br/>Address Line</p>
+          </div>
+
+          <div class="w-full h-48 bg-gray-100 border border-gray-300 flex items-center justify-center text-gray-400 mb-6">
+            Map of location
+          </div>
+
+          <div class="mb-6">
+            <p class="uppercase text-xs text-gray-500">Contact email</p>
+            <p class="font-mono font-bold mt-2">hello@twprjo.com</p>
+            <p class="mt-2 font-mono">+12 34567890</p>
+          </div>
+
+          <div>
+            <p class="uppercase text-xs text-gray-500">Socials</p>
+            <div class="flex gap-3 mt-3">
+              <a href="#" class="px-3 py-2 border border-gray-400 text-sm">Socials</a>
+              <a href="#" class="px-3 py-2 border border-gray-400 text-sm">Socials</a>
+              <a href="#" class="px-3 py-2 border border-gray-400 text-sm">Socials</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t mt-12">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between text-xs text-gray-500">
+        <div>© TW PRJ. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:underline">Socials</a>
+          <a href="#" class="hover:underline">Socials</a>
+          <a href="#" class="hover:underline">Socials</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

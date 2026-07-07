@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="sticky top-0 border-b-2 bg-white">
+      <nav class="px-4" aria-label="Main navigation">
+        <div class="relative h-16 flex items-center">
+          <div class="flex-1 flex items-center">
+            <a href="index.html" class="text-xl font-semibold">TW PRJ</a>
+          </div>
+
+          <div class="absolute left-1/2 transform -translate-x-1/2">
+            <ul class="flex space-x-8">
+              <li>
+                <a href="index.html" class="font-bold hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="projects.html" class="text-gray-600 hover:underline"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-gray-600 hover:underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1 flex justify-end">
+            <a
+              href="contact.html"
+              class="px-4 py-2 bg-black text-white hover:rounded hover:bg-gray-700"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="grid lg:grid-cols-[2fr_1fr] gap-x-10 mb-10">
+        <div class="p-4">
+          <p class="uppercase text-gray-600">Some small text</p>
+          <h1 class="font-bold text-8xl">
+            Big catchy text here with a <span class="text-gray-600">Gray</span>.
+          </h1>
+        </div>
+        <div class="px-4">
+          <p class="p-9">
+            <div class="p-2 border-l-3">
+            Some text to describe the website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            exercitationem perferendis dicta ipsam, iusto repellendus veritatis
+            distinctio error, ducimus nemo quod expedita aperiam itaque
+            </div>
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-5 mt-4">
+            <button class="py-4 bg-black text-white hover:bg-gray-700">
+              Button
+            </button>
+
+            <button class="py-4 bg-gray-200 text-black hover:bg-gray-300">
+              Button
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="grid sm:grid-cols-4 divide-x divide-gray-300 border-y p-9 bg-gray-100">
+        <div class="px-2">
+          <p class="uppercase text-gray-600">Stats</p>
+          <p class="font-bold italic text-4xl">10+</p>
+        </div>
+
+        <div class="px-2">
+          <p class="uppercase text-gray-600">Stats</p>
+          <p class="font-bold italic text-4xl">10+</p>
+        </div>
+
+        <div class="px-2">
+          <p class="uppercase text-gray-600">Stats</p>
+          <p class="font-bold italic text-4xl">10+</p>
+        </div>
+
+        <div class="px-2">
+          <p class="uppercase text-gray-600">Stats</p>
+          <p class="font-bold italic text-4xl">10+</p>
+        </div>
+      </section>
+
+      <section class="grid md:grid-cols-2 p-9 gap-10">
+        <div class="flex flex-col h-full px-2 bg-[url('https://plus.unsplash.com/premium_photo-1667339610013-020844b87990?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+          <div class="mt-auto p-4">
+              <p class="uppercase text-gray-200">Project Image</p>
+              <p class="uppercase font-bold text-4xl text-white">Project Name</p>
+            <p class="text-gray-200">
+              Some interesting text about the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            </p>
+          </div>
+          </div>
+
+        <div>
+            <div class="bg-gray-200 p-4 border-b-10 border-gray-300">
+            <p class="uppercase text-gray-600">Lorem ipsum</p>
+            <p class="uppercase font-bold text-4xl">Lorem, ipsum dolor sit </p>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos placeat magni explicabo pariatur beatae laboriosam velit fuga!</p>
+
+
+            <div class="grid md:grid-cols-3 p-6 mt-10 gap-4 border-t-2 border-gray-300">
+            <p class="border-b-4 ">Buzz</p>
+            <p class="border-b-4">Buzz</p>
+            <p class="border-b-4 border-gray-300">Buzz</p>
+            </div>
+          </div>
+        
+
+          <div class="grid lg:grid-cols-2 gap-4 mt-5" >
+            <div class="bg-gray-200  p-4 border-r-2 border-black">
+              <p class="uppercase text-gray-400">lorem ipsum</p>
+              <p class="uppercase font-bold text-4xl">lorem ipsum</p>
+
+            </div>
+            <div class="bg-black flex flex-col items-center text-center py-40">
+              <p class="uppercase text-gray-400 mb-4">lorem ipsum</p>
+
+              <button class="py-2 px-4 bg-black text-white hover:bg-gray-700 border border-white">
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <section class="max-w-6xl mx-auto px-6 py-12">
+        <div class="flex items-start justify-between mb-8">
+          <div>
+            <p class="uppercase text-sm text-gray-500">Index</p>
+            <h2 class="font-extrabold uppercase text-4xl md:text-5xl tracking-tight">PROJECTS</h2>
+          </div>
+
+          <div class="text-right">
+            <p class="uppercase text-sm text-gray-500">Sort by</p>
+            <a href="#" class="text-sm underline">Time</a>
+          </div>
+        </div>
+
+        <ul class="divide-y divide-gray-200">
+          <li class="py-6 flex items-center">
+            <div class="w-16 text-gray-500 font-mono">001</div>
+            <div class="flex-1 px-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold uppercase">Project Name</h3>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Place, PL</p>
+            </div>
+          </li>
+
+          <li class="py-6 flex items-center">
+            <div class="w-16 text-gray-500 font-mono">002</div>
+            <div class="flex-1 px-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold uppercase">Project Name</h3>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Place, PL</p>
+            </div>
+          </li>
+
+          <li class="py-6 flex items-center">
+            <div class="w-16 text-gray-500 font-mono">003</div>
+            <div class="flex-1 px-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold uppercase">Project Name</h3>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                  <span class="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded">Tag</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Place, PL</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+    </main>
+    
+    <section class="bg-black text-white mt-10">
+      <div class="max-w-6xl mx-auto py-20 px-6 text-center">
+        <h2 class="font-bold uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight">
+          Subscribe to our newsletter.
+        </h2>
+
+        <form class="mt-10 flex items-center justify-center gap-4" action="#" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="bg-transparent border-b border-gray-600 placeholder-gray-400 text-white w-2/3 sm:w-1/2 focus:outline-none py-2"
+          />
+          <button class="uppercase p-3 font-bold bg-transparent border border-white hover:bg-white hover:text-black">
+            Subscribe
+          </button>
+        </form>
+
+        <div class="mt-8 flex justify-center gap-8 uppercase text-sm tracking-wider">
+          <a href="#" class="text-gray-300 hover:text-white">Page</a>
+          <a href="#" class="text-gray-300 hover:text-white">Page</a>
+          <a href="#" class="text-gray-300 hover:text-white">Page</a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800">
+        <div class="max-w-6xl mx-auto py-4 px-6 flex justify-between text-xs text-gray-400">
+          <div>© TW PRJ. All rights reserved.</div>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-white">Socials</a>
+            <a href="#" class="hover:text-white">Socials</a>
+            <a href="#" class="hover:text-white">Socials</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
