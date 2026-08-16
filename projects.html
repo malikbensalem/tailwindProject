@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Projects</title>
+    <title>Tech Archive</title>
   </head>
-  <body>
+  <body data-page="archive">
     <header class="sticky top-0 border-b-2 bg-white">
       <nav class="px-4" aria-label="Main navigation">
         <div class="relative h-16 flex items-center">
           <div class="flex-1 flex items-center">
-            <a href="index.html" class="text-xl font-semibold">TW PRJ</a>
+            <a href="index.html" class="text-xl font-semibold">TECHROOM</a>
           </div>
 
           <div class="absolute left-1/2 transform -translate-x-1/2">
             <ul class="flex space-x-8">
               <li>
-                <a href="index.html" class="text-gray-600 hover:underline">Home</a>
+                <a href="index.html" class="text-gray-600 hover:underline">Latest</a>
               </li>
               <li>
-                <a href="projects.html" class="font-bold hover:underline">Projects</a>
+                <a href="projects.html" class="font-bold hover:underline">Tech archive</a>
               </li>
               <li>
                 <a href="contact.html" class="text-gray-600 hover:underline">Contact</a>
@@ -41,12 +41,17 @@
 
     <main class="max-w-6xl mx-auto px-6 py-12">
       <section class="mb-8">
-        <p class="uppercase text-sm text-gray-500">Projects</p>
-        <h1 class="font-extrabold uppercase text-5xl md:text-6xl tracking-tight mt-4">Projects</h1>
-        <p class="text-gray-600 mt-4">Some text to describe the archive. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Replace this paragraph with a concise portfolio description outlining themes, scope, and time frame.</p>
+        <p class="uppercase text-sm text-gray-500">Technology desk</p>
+        <h1 class="font-extrabold uppercase text-5xl md:text-6xl tracking-tight mt-4">Tech archive</h1>
+        <p class="text-gray-600 mt-4">A living collection of technology stories, ideas, launches, and discoveries from around the world.</p>
+        <p data-news-status class="text-xs text-gray-500 mt-4">Loading tech stories...</p>
       </section>
 
-      <section class="grid md:grid-cols-3 gap-6">
+      <section class="grid md:grid-cols-3 gap-6" data-news-list>
+        <p class="col-span-full text-gray-500">Loading the technology archive...</p>
+      </section>
+
+      <section class="hidden grid md:grid-cols-3 gap-6">
         <div class="border border-gray-300 p-6 bg-white">
           <div class="w-full h-40 bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-400 mb-4">Image Placeholder 01</div>
           <h3 class="font-bold uppercase">PROJECT TITLE</h3>
@@ -145,5 +150,6 @@
         </div>
       </div>
     </footer>
+    <script src="news.js"></script>
   </body>
 </html>
